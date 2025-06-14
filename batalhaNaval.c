@@ -97,18 +97,18 @@ int main() {
     int tabuleiro[TAM][TAM];
     limparTabuleiro(tabuleiro);
 
-    // Nível Novato: 2 navios simples
+    
     posicionarNavioVertical(tabuleiro, 0, 0, 3);     // Navio vertical
     posicionarNavioHorizontal(tabuleiro, 5, 2, 4);   // Navio horizontal
 
-    // Nível Aventureiro: navios diagonais
+    
     posicionarNavioDiagonalPrincipal(tabuleiro, 2, 2, 3);
     posicionarNavioDiagonalSecundaria(tabuleiro, 1, 8, 3);
 
     printf("\nTabuleiro com navios (0 = livre, 3 = navio):\n");
     exibirTabuleiro(tabuleiro);
 
-    // Nível Mestre: habilidades especiais
+    
     int habilidade[5][5];
 
     printf("\nHabilidade em Cone:\n");
